@@ -1,6 +1,10 @@
-@pytest.fixture()
-def before_each():
-    print("Called before each test")
+import pytest
 
-def test_first(before_each):
-    assert 1 == 1
+
+@pytest.fixture(scope="function")
+def browser_settings():
+    print("Браузер!")
+
+    yield
+
+    print("Закрываем браузер!")
