@@ -1,4 +1,4 @@
-text1 = 'life'
+ text1 = 'life'
 text2 = 'is'
 text3 = 'beautiful'
 
